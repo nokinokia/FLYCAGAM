@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background: url('img/bgmain.png') repeat-x bottom center #30c0df;
+    display: flex;
+    min-height: 100vh;
+    justify-content: flex-end;
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+}
+
+.phone {
+    position: absolute;
+    bottom: -165px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#canvas {
+    background: #30c0df;
+    width: 323px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+
+.ontop {
+    font-family: 'Press Start 2P';
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 6px dashed #82e38c;
+    padding: 5px;
+}
+
+.horizontal-list {
+    list-style: none; /* Remove default list styles */
+    padding: 0; /* Remove default padding */
+    display: flex; /* Use flexbox to display items horizontally */
+}
+
+.horizontal-list li {
+    margin-right: 40px; /* Adjust spacing between items */
+}
